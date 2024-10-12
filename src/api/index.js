@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const getInstance = (url :string = 'http://localhost:8082/', timeout :number = 2000) => {
   const headers = {
-    'content-type': 'application/json',
+    'content-type': 'application/vnd.kafka.v2+json',
   };
 
   if (process.env.REACT_APP_PROXY) {
